@@ -2,7 +2,7 @@ package course.myPackageA;
 
 import course.myPackageB.ClassIsInhiretedOfOjectClass;
 
-public class Person extends ClassIsInhiretedOfOjectClass {
+public class Person extends ClassIsInhiretedOfOjectClass implements Comparable<Person> {
     public String personName;
     public String gender;
     public int age;
@@ -42,5 +42,10 @@ public class Person extends ClassIsInhiretedOfOjectClass {
         } else {
             System.out.println(personName + " will sleep avg 10 hours a day");
         }
+    }
+
+    @Override
+    public int compareTo(Person o) {
+        return personName.compareTo(o.personName);
     }
 }
