@@ -2,6 +2,8 @@ package course.myPackageA;
 
 import course.myPackageB.ClassIsInhiretedOfOjectClass;
 
+import java.util.Objects;
+
 public class Person extends ClassIsInhiretedOfOjectClass implements Comparable<Person> {
     public String personName;
     public String gender;
@@ -47,5 +49,15 @@ public class Person extends ClassIsInhiretedOfOjectClass implements Comparable<P
     @Override
     public int compareTo(Person o) {
         return personName.compareTo(o.personName);
+    }
+
+    @Override
+    public int hashCode() {
+        return this.personName.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return obj instanceof Person && this.personName.equals(((Person)obj).personName); // this equals is from string class as name is string
     }
 }

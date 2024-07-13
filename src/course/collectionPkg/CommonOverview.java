@@ -11,11 +11,12 @@ public class CommonOverview {
     // ArrayList, LinkedList, Vector
 
     // Set - unordered collection of elements, does not allow duplicate values
-    // HashSet, TreeSet
+    // HashSet (no order) (else no diff ) LinkedHashSet (insetion order will be
+    // maintained), TreeSet (sorted)
 
     // Map - key-value pair collection, allows duplicate keys, maintains insertion
     // order
-    // HashMap,Hashtable, TreeMap, LinkedHashMap
+    // HashMap,Hashtable, LinkedHashMap, TreeMap (sorted)
 
     // Queue - ordered collection of elements, supports insertion and removal at
     // both ends
