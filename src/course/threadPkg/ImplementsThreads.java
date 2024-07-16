@@ -1,12 +1,25 @@
 package course.threadPkg;
 
 public class ImplementsThreads implements Runnable {
+    // synchronized run method will only allow one thread to run at a time in a
+    // method but if we want to make some code block synchronous then use
+    // synchronized block {}
 
     @Override
     public void run() {
-        String[] words = { "a", "b", "c", "d" };
-        for (String word : words) {
-            System.out.println("Thread is  " + Thread.currentThread().getName() + "  " + word);
+        // below is synchronized block and we have to pass which object we have to block
+        synchronized (this) {
+            // in this case we are synchronizing only this block of code
+            String[] words = { "a", "b", "c", "d" };
+            try {
+                // current thread will go for sleep for milliseconds
+                Thread.sleep(2000); // it will delay execution for milliseconds and also throw InterruptedException
+            } catch (InterruptedException e) {
+                System.out.println("error handeled");
+            }
+            for (String word : words) {
+                System.out.println("Thread is  " + Thread.currentThread().getName() + "  " + word);
+            }
         }
     }
 
