@@ -8,6 +8,8 @@ public class Bag {
     // constructor is a block of code that initialize the state and value during
     // object creation
 
+    // constructor over loading (as parameters are different)
+
     // parameterized constructor
     public Bag(String color, int capacity) {
         this.color = color;

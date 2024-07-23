@@ -2,7 +2,8 @@ package course.polymorphismPkg;
 
 public class Cat extends PetAnimal {
 
-    // method override happen at run time so its run time polymorphism
+    // method override happen at run time so its run time polymorphism (dynamic
+    // method dispatch)
 
     // method overloading happen at compile time so its compile time polymorphism
 
