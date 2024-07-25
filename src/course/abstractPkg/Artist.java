@@ -12,5 +12,6 @@ public class Artist extends Human {
         System.out.println(artist.getName());
         artist.canWalk(); // since canWalk is default method it will be inherited from human abstract
                           // class
+
     }
 }

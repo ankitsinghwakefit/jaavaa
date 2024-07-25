@@ -13,3 +13,12 @@ public abstract class Human {
 
     // default methods are only for interface methods not for abstract class methods
 }
+
+// TULUSKO
+// class can be abstract without any abstract method but vice versa is not
+// allowed
+
+// we can not create object of abstract class, object can only be created of
+// class that extends abstract class
+
+// NOTE > we can create anonymous Inner class and implement abstract methods
