@@ -9,7 +9,7 @@ public class Artist implements Human, PlayKeyboard {
     // inform JVM which interface method to invoke
     public void play() {
         // Human play method is invoked
-        Human.super.play();
+        // Human.super.play();
         // PlayKeyboard play method is invoked
         PlayKeyboard.super.play();
     }
@@ -29,7 +29,7 @@ public class Artist implements Human, PlayKeyboard {
         Human h = new Artist();
         h.play();
         // we can utitlize final vars from intterfaces
-        System.out.println(h.EYES_COUNT);
+        // System.out.println(h.EYES_COUNT);
         PlayKeyboard p = new Artist();
         p.play();
     }
